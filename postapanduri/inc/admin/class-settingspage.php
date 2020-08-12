@@ -90,7 +90,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_generale()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -116,7 +116,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_puncte_ridicare()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -139,7 +139,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_curierat()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -162,7 +162,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_pachetomat()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -185,7 +185,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_lista_pachetomate()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		?>
