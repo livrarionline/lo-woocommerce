@@ -41,23 +41,23 @@ class SettingsPage
 	{
 		// This page will be under "Settings"
 		add_menu_page(
-			__('Posta Panduri', 'postapanduri'), __('Posta Panduri', 'postapanduri'), 'manage_options', 'postapanduri-general', array($this, 'postapanduri_toplevel_descriere'), plugin_dir_url(__FILE__) . '../../img/pachetomat-icon.png'
+			__('Posta Panduri', 'postapanduri'), __('Posta Panduri', 'postapanduri'), 'manage_woocommerce', 'postapanduri-general', array($this, 'postapanduri_toplevel_descriere'), plugin_dir_url(__FILE__) . '../../img/pachetomat-icon.png'
 		);
 
 		add_submenu_page(
-			'postapanduri-general', __('Setari generale', 'postapanduri'), __('Setari generale', 'postapanduri'), 'manage_options', 'postapanduri-setari-generale', array($this, 'postapanduri_sublevel_setari_generale')
+			'postapanduri-general', __('Setari generale', 'postapanduri'), __('Setari generale', 'postapanduri'), 'manage_woocommerce', 'postapanduri-setari-generale', array($this, 'postapanduri_sublevel_setari_generale')
 		);
 		add_submenu_page(
-			'postapanduri-general', __('Setari puncte de ridicare', 'postapanduri'), __('Setari puncte de ridicare', 'postapanduri'), 'manage_options', 'postapanduri-setari-puncte-ridicare', array($this, 'postapanduri_sublevel_setari_puncte_ridicare')
+			'postapanduri-general', __('Setari puncte de ridicare', 'postapanduri'), __('Setari puncte de ridicare', 'postapanduri'), 'manage_woocommerce', 'postapanduri-setari-puncte-ridicare', array($this, 'postapanduri_sublevel_setari_puncte_ridicare')
 		);
 		add_submenu_page(
-			'postapanduri-general', __('Setari curierat', 'postapanduri'), __('Setari curierat', 'postapanduri'), 'manage_options', 'postapanduri-setari-curierat', array($this, 'postapanduri_sublevel_setari_curierat')
+			'postapanduri-general', __('Setari curierat', 'postapanduri'), __('Setari curierat', 'postapanduri'), 'manage_woocommerce', 'postapanduri-setari-curierat', array($this, 'postapanduri_sublevel_setari_curierat')
 		);
 		add_submenu_page(
-			'postapanduri-general', __('Setari Pachetomat', 'postapanduri'), __('Setari Pachetomat', 'postapanduri'), 'manage_options', 'postapanduri-setari-pachetomat', array($this, 'postapanduri_sublevel_setari_pachetomat')
+			'postapanduri-general', __('Setari Pachetomat', 'postapanduri'), __('Setari Pachetomat', 'postapanduri'), 'manage_woocommerce', 'postapanduri-setari-pachetomat', array($this, 'postapanduri_sublevel_setari_pachetomat')
 		);
 		add_submenu_page(
-			'postapanduri-general', __('Lista Pachetomatelor', 'postapanduri'), __('Lista Pachetomatelor', 'postapanduri'), 'manage_options', 'postapanduri-setari-lista-pachetomate', array($this, 'postapanduri_sublevel_setari_lista_pachetomate')
+			'postapanduri-general', __('Lista Pachetomatelor', 'postapanduri'), __('Lista Pachetomatelor', 'postapanduri'), 'manage_woocommerce', 'postapanduri-setari-lista-pachetomate', array($this, 'postapanduri_sublevel_setari_lista_pachetomate')
 		);
 	}
 
@@ -90,7 +90,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_generale()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -116,7 +116,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_puncte_ridicare()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -139,7 +139,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_curierat()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -162,7 +162,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_pachetomat()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		// Set class property
@@ -185,7 +185,7 @@ class SettingsPage
 
 	public function postapanduri_sublevel_setari_lista_pachetomate()
 	{
-		if (!current_user_can('manage_options')) {
+		if (!current_user_can('manage_woocommerce')) {
 			wp_die(__('You do not have sufficient permissions to access this page.', 'postapanduri'));
 		}
 		?>
