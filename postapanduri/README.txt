@@ -2,7 +2,7 @@
 Contributors: adrianpo
 Donate link: https://postapanduri.ro/
 Tags: postapanduri,pachetomat,ecommerce
-Requires at least: 4.1
+Requires at least: 5.0
 Tested up to: 5.4
 Stable tag: 1.0.4
 Requires PHP: 5.5.0
